@@ -7,16 +7,16 @@ int main() {
     Cajero cajero;
 
     // Crear cuentas para clientes
-    Cuenta cuenta1(12345, "Juan Perez", 11111111, true, true, "contraseña1", true);
-    Cuenta cuenta2(67890, "Maria Gomez", 22222222, false, false, "contraseña2", false);
+    Cuenta cuenta1(12345, "Sergio Apaza", 11111111, true, true, "contraseña1", true);
+    Cuenta cuenta2(67890, "Ebert Condori", 22222222, false, false, "contraseña2", false);
 
     // Asignar cuentas al cajero
     cajero.crearCuenta(cuenta1);
     cajero.crearCuenta(cuenta2);
 
     // Crear clientes
-    Cliente cliente1(11111111, "Juan Perez", cuenta1, cajero);
-    Cliente cliente2(22222222, "Maria Gomez", cuenta2, cajero);
+    Cliente cliente1(11111111, "Sergio Apaza", cuenta1, cajero);
+    Cliente cliente2(22222222, "Ebert Condori", cuenta2, cajero);
 
     // Cliente 1 realiza operaciones
     cliente1.iniciarSesion();
